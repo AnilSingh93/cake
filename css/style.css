@@ -1,0 +1,723 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+ --primary-color:#727272;
+ --secondary-color: #ff354b;
+ --background-color: #f1fdff;
+ --border-color:  #dbdbdb;
+}
+body{
+    color: var(--primary-color);
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+	overflow-X: hidden;
+}
+h1,h2,h3,h4,h5,h6{
+    color: var(--secondary-color);   
+    font-family: 'Poppins', sans-serif;
+}
+
+.occasion {
+    padding-top: 100px;
+}
+.occasion .birthday_cake .deatils h3{
+font-size: 18px;
+margin-bottom: 0;
+}
+.occasion .birthday_cake .deatils p{
+    font-size: 14px;
+    margin-bottom: 0;
+}
+.occasion .birthday_cake {
+    position: relative;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.occasion .birthday_cake .deatils {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+}
+
+.heading h2 {
+    font-size: 36px;
+}
+.heading h3 {
+    font-size: 18px;
+    color: var(--primary-color);
+}
+.cakes{
+    background-color: var(--background-color);
+    margin-top: 50px;
+    padding: 50px 0;
+    
+}
+.deatils_img img,
+.cake-banners img {
+    width: 100%;
+}
+.padding-right{
+    padding-right: 9px;
+}
+.padding-left{
+    padding-left: 9px;   
+}
+.cake-banners {
+    height: 100%;
+}
+
+.cake-banners img {
+    height: 100%;
+    object-fit: cover;
+}
+.occasion.delicious,
+.relative,
+.main-cake {
+    position: relative;
+}
+.main-cake:before {
+    content: "";
+    position: absolute;
+    background: url("../images/circle-line.png") no-repeat;
+    width: 120px;
+    height: 120px;
+    right: -70px;
+    top: -50px;
+    left: auto;
+    object-fit: contain;
+}
+.main-cake:after {
+    content: "";
+    position: absolute;
+    background: url("../images/occ-back2.png") no-repeat;
+    width: 60px;
+    height: 50px;
+    left: -40px;
+    top: auto;
+    bottom: -30px;
+    object-fit: contain;
+    z-index: 1;
+}
+.cake-banners img {
+    z-index: 11;
+    position: relative;
+}
+.cakes ,
+.cakes .heading {
+    position: relative;
+}
+.cakes:before {
+    content: "";
+    position: absolute;
+    background: url("../images/occ-back1.png") no-repeat;
+    width: 80px;
+    height: 100px;
+    left: 0;
+    top: 100px;
+    object-fit: contain;
+    z-index: 1;
+}
+.banner img{
+    width: 100%;
+}
+section.slider .carousel-inner .carousel-item img {
+    width: 100%;
+}
+.birthday_cake {
+    position: relative;
+}
+
+.birthday_cake .birthday_cake_offer span {
+    background: url("../images/offer_back.png");
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.birthday_cake .birthday_cake_second {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s linear;
+}
+.occasion .birthday_cake:hover .birthday_cake_second
+{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.birthday_cake .birthday_cake_second p {
+    background: #fff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    cursor: pointer;
+}
+.birthday_cake .birthday_cake_offer {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+.birthday_cake img {
+    width: 100%;
+}
+.birthday_cake .birthday_cake_second p img {
+    width: auto;
+    height: auto;
+    object-fit: cover;
+}
+.occasion .birthday_cake .description {
+    padding: 10px;
+    background: #fff;
+}
+
+.occasion .birthday_cake .description .cake_desc p {
+    font-size: 18px;
+    line-height: 30px;
+    color: #222222;
+    font-weight: 500;
+        margin-bottom: 0;
+}
+.align_center {
+    align-items: center;
+}
+.occasion .birthday_cake .description .cake_desc p.price {
+     color: var(--secondary-color) ;
+}
+.occasion .birthday_cake .description .cake_desc .cake_right_img img {
+    width: 36px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.occasion .birthday_cake .description .cake_desc .cake_right_img {
+    background: #daf8ff;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    margin: 0 auto;
+}
+.birthday_cake {
+    margin-top: 30px;
+}
+.party_occasion {
+    position: relative;
+}
+.birthday:before,
+.party_occasion:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 150px;
+    height: 350px;
+    background: url("../images/coll-back2.png") no-repeat;
+    transform: translateY(-50%);
+}
+.birthday:after,
+.party_occasion:after {
+    content: "";
+    position: absolute;
+    top: 60%;
+    right: 0;
+    width: 70px;
+    height: 250px;
+    background: url("../images/collection-back1.png") no-repeat;
+    transform: translateY(-50%);
+}
+.party_main {
+    position: relative;
+    padding: 30px;
+}
+.party_main:after {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    right: 156px;
+    background: url("../images/delicious-back-1.jpg") no-repeat;
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    z-index: -1;
+}
+.delicious .second_banner img{
+    width: 100%;
+}
+.occasion.delicious .delicious_full-width:after,
+.occasion.delicious .delicious_full-width:before {
+    content: "";
+    position: absolute;
+    left: -45px;
+    bottom: -35px;
+    background: url("../images/delicious-back-1.jpg") no-repeat;
+    width: 90px;
+    height: 80px;
+    background-size: contain;
+    z-index: -1;
+}
+.occasion.delicious .delicious_full-width:after {
+    content: "";
+    left: auto;
+    right: -25px;
+    background: url("../images/circle.png") no-repeat;
+    width: 90px;
+    height: 80px;
+    background-size: contain;
+    bottom: -14px;
+}
+.delicious .second_banner img {
+    border-radius: 11px;
+}
+.trending > .container {
+    max-width: 100%;
+    padding-left: 200px;
+}
+.trending .trending_sliders .slick-list.draggable {
+    padding-right: 150px;
+}
+.trending .trending_sliders button.slick-arrow {
+    position: absolute;
+    left: -51%;
+    top: 280px;
+    right: auto;
+}
+.trending .trending_heading h2 {
+    font-size: 35px;
+    line-height: 48px;
+    font-weight: 500;
+}
+
+.trending .trending_heading {
+    padding-top: 100px;
+    padding-right: 50px;
+}
+.trending .trending_heading p {
+    font-size: 18px;
+    line-height: 30px;
+    color: #727272;
+    margin-bottom: 0;
+}
+.trending:before {
+    content: "";
+    width: 50%;
+    background: var(--background-color);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 0 50px 50px 0;
+}
+.trending.occasion {
+    margin-top: 70px;
+    padding: 50px 0 30px 0;
+}
+.trending .trending_sliders button.slick-arrow {
+      color: transparent;
+    background: transparent;
+      width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border: 2px solid var(--secondary-color);
+    border-radius: 5px;
+}
+.trending .trending_sliders button.slick-prev.slick-arrow,
+.trending .trending_sliders button.slick-next.slick-arrow {
+    left: -44%;
+    background: url("../images/slider_right-arrow.png") no-repeat;
+    background-position: center;
+   transition: all 0.3s linear;
+}
+.trending .trending_sliders button.slick-prev.slick-arrow {
+    background: url("../images/slider_left-arrow.png") no-repeat;
+    left: -51%;
+    background-position: center;
+
+}
+.trending .trending_sliders button.slick-prev.slick-arrow:hover {
+    background: url("../images/left-hover_image.png") no-repeat;
+    background-color: var(--secondary-color);
+    left: -51%;
+    background-position: center;
+}
+.trending .trending_sliders button.slick-next.slick-arrow:hover {
+background: url("../images/right-hover_image.png") no-repeat;
+background-color: var(--secondary-color);
+background-position: center;
+}
+button:focus{
+    outline:  none;
+}
+.trending.occasion .birthday_cake .birthday_cake_second p img{
+    margin: 0 auto;
+    }
+.trending.occasion .birthday_cake .birthday_cake_second p {
+    background: #fff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.birthday .birtd_grid .grid_inner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.birthday .birtd_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+     grid-gap: 25px;
+}
+.birthday .birtd_grid .grid_inner.grid_first {
+    grid-column: 1/3;
+}
+.birthday .birtd_grid .grid_inner.grid_third {
+    grid-row: span 2;
+}
+footer .footer_main {
+    padding: 40px 0;
+}
+footer .footer_main {
+    padding: 40px 0;
+}
+
+footer .footer_main .footer_heading img {
+    margin-bottom: 30px;
+    max-width: 200px;
+}
+
+footer .footer_main .footer_heading p {
+    font-size: 16px;
+}
+
+footer .footer_main .footer_heading  ul.social_icons {
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+footer .footer_main .footer_heading ul.social_icons li:not(:last-child) {
+    margin-right: 10px;
+}
+footer .footer_main .footer_heading h2 {
+    font-size: 18px;
+    line-height: 30px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+footer .footer_main .footer_heading h2:before {
+    content: "";
+    width: 25%;
+    position: absolute;
+    bottom: 0;
+    border-radius: 5px;
+    background: #000;
+    border: 1px solid #000;
+    z-index: 1;
+}
+
+
+footer .footer_main .footer_heading h2:after {
+    content: "";
+    width: 40%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #d6d6d6;
+    height: 2px;
+}
+footer .footer_botom {
+    text-align: center;
+}
+footer .footer_main .footer_heading ul li {
+    list-style: none;
+    font-size: 15px;
+}
+
+footer .footer_main .footer_heading ul li a {
+    color: #727272;
+}
+.info-area {
+    padding-top: 100px;
+}
+
+.margin-top-50 {
+    margin-top: 40px;
+}
+.single-info {
+    border: 1px solid #e1e1e1;
+    padding: 15px 20px;
+    border-radius: 5px;
+    height: 100%;
+    background: #ffffff;
+    margin-bottom: 30px;
+}
+
+.meddy-bg {
+    background: var(--background-color);
+}
+.meddy-deep-bg {
+    background-color: #ffc6cd;
+}
+.purple-lite-bg {
+    background-color: var(--background-color);
+}
+.info-area .info-content h5 {
+    color: #2a435d;
+    font-size: 25px;
+    font-weight: 700;
+}
+.info-area .info-content p {
+    color: #2a435d;
+
+}
+.single-info .info-img {
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+.wsmenu>.wsmenu-list>li>.navtext>span+span:after {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    content: "\f078";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 9px;
+    line-height: 10px;
+    margin-left: 0px;
+    position: relative;
+    right: -7px;
+    text-align: right;
+    top: 1px;
+}
+.desktop_design .desktop_logo img {
+    max-width: 150px;
+}
+.wsmenu>.wsmenu-list>li>.navtext>span+span:after {
+    color: #9e9e9e;
+    content: "";
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+    width: 5px;
+    height: 5px;
+    transform: rotate(45deg);
+}
+.desktop_design .headertopleft {
+    max-width: 170px;
+    width: 100%;
+    display: inline-block;
+}
+
+.desktop_design .wssearchbar {
+    max-width: 350px;
+    display: inline-block;
+    width: 100%;
+}
+
+.wsextra.clearfix .delivery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wsextra.clearfix .delivery .icons img {max-width: 35px;width: 100%;margin-right: 10px;object-fit: contain;}
+
+.wsextra.clearfix .delivery .icons {
+    display: flex;
+}
+.wsextra.clearfix {
+    display: inline-block;
+    width: 100%;
+    max-width: calc(100% - 500px);
+}
+.wsextra.clearfix .delivery .icons .icons_desc p {
+        font-size: 13px;
+            margin: 0;
+}
+
+.wsextra.clearfix .delivery .icons .icons_desc p span {
+    font-weight: bold;
+    display: block;
+}
+.headerwp {
+    display: flex;
+    align-items: center;
+}
+
+.wsextra.clearfix .delivery_main {
+    display: flex;
+        justify-content: space-evenly;
+}
+.wsextra.clearfix .delivery{
+ 
+    margin-right: 50px;
+}
+.wsextra.clearfix .delivery .icons .icons_desc p a {
+    color: #727272;
+}
+.desktop_design .wssearchbar form input {
+    padding: 0 30px 0 10px;
+}
+
+.desktop_design .wssearchbar form input::placeholder {
+    color: #727272;
+    font-size: 13px;
+}
+
+.desktop_design .wssearchbar form button.btnstyle {
+    background: transparent;
+    border: none;
+    position: relative;
+    left: -27px;
+}
+.category {
+    padding: 100px 0 0;
+}
+.category .cat_data img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: auto ;
+
+}
+.cat_data {
+    text-align: center;
+}
+.category .cat_data p {
+    margin-top: 20px;
+    }
+.category .heading {
+    margin-bottom: 35px;
+}
+.occasion.delicious,
+.occasion.party_occasion {
+    padding-top: 60px;
+}
+.birthday {
+    padding-top: 75px;
+}
+.birthday .heading {
+    padding-bottom: 45px;
+}
+.birthday {
+    position: relative;
+}
+.birthday .birtd_grid .grid_inner.grid_third:after {
+    content: "";
+    background: url("../images/circle.png");
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    position: absolute;
+    bottom: -40px;
+    right: -50px;
+}
+
+@media (max-width:  1262px){
+    .wsmenu {
+    width: 93%;
+    display: inline-block !important;
+    float: none !important;
+}
+}
+
+@media (max-width:  991px){
+    .headtoppart.clearfix.wsmain.clearfix.desktop_design {
+    display: none;
+}
+
+}
+
+@media (max-width:  768px){
+ .party_main:after {
+    right: 217px;
+}
+.trending > .container {
+    padding-left: 50px;
+}
+.trending .trending_heading {
+    padding-top: 30px;
+    padding-right: 0;
+}
+.trending .trending_sliders button.slick-arrow {
+    top: 300px;
+    
+}
+.trending .trending_sliders button.slick-prev.slick-arrow, .trending .trending_sliders button.slick-next.slick-arrow {
+    left: -37%;
+}
+.trending .trending_sliders button.slick-prev.slick-arrow {
+        left: -53%;
+    
+}
+
+}
+
+@media (max-width:  767px){
+    .occasion ,
+    .category {
+    padding: 50px 0 0;
+}
+.main-cake .pr-4 {
+    display: none;
+}
+.padding-right {
+     display: none;
+}
+.party_main {
+     padding: 0;
+}
+.second_banner {
+    margin-top: 30px;
+}
+.trending .trending_sliders .slick-list.draggable {
+    padding-right: 0;
+}
+.trending > .container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.birthday .birtd_grid {
+    display: block;
+}.birthday .birtd_grid .grid_inner {
+    margin-bottom: 20px;
+}
+.info-area .col-lg-4 {
+    padding-top: 20px;
+}
+.wsmenu>.wsmenu-list>li>.navtext>span+span:after {
+    display: none !important;
+}
+.wsmenu>.wsmenu-list>li.wscarticon span.hidetxt {
+    padding-left: 10px;
+}
+
+}
